@@ -159,13 +159,13 @@ h6 {
 .defaultHero,
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/defaultBcg.jpeg") center/cover no-repeat;
+  background: url('./images/defaultBcg.jpeg') center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .roomsHero {
-  background-image: url("./images/room-2.jpeg");
+  background-image: url('./images/room-2.jpeg');
   min-height: 60vh;
 }
 /* End of Hero */
@@ -213,6 +213,7 @@ h6 {
 .section-title {
   text-align: center;
   margin-bottom: 4rem;
+  width: 100%;
 }
 .section-title h4 {
   font-size: 2rem;
@@ -447,24 +448,18 @@ h6 {
   grid-column-gap: 30px;
 }
 
-@media screen and (min-width: 776px) {
-  .roomslist-center {
-    width: 90vw;
-  }
-}
-@media screen and (min-width: 992px) {
-  .roomslist-center {
-    width: 95vw;
-    max-width: 1170px;
-  }
-}
 /* end of roomlist */
 /*  rooms fitler*/
 .filter-container {
   padding: 5rem 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 80vw;
+  margin: 0 auto;
 }
 .filter-form {
-  width: 60vw;
+  width: 20vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
@@ -499,7 +494,7 @@ h6 {
   font-size: 0.8rem;
   margin-left: 0.5rem;
 }
-@media screen and (min-width: 776px) {
+/* @media screen and (min-width: 776px) {
   .filter-form {
     width: 70vw;
   }
@@ -509,5 +504,6 @@ h6 {
     width: 95vw;
     max-width: 1170px;
   }
-}
+} */
+
 /* end of rooms fitler*/

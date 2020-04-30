@@ -1,26 +1,26 @@
-import React from 'react';
-import './App.css';
-import { Route, Switch } from 'react-router-dom';
+import React from "react";
+// router
+import { Switch, Route } from "react-router-dom";
+import "./App.css";
 
-//custom components
-import Home from './pages/Home';
-import Rooms from './pages/Rooms';
-import SingleRoom from './pages/SingleRoom';
-import Error from './pages/Error';
-import NavBar from './components/NavBar';
-
+// custom compoenents
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+import Rooms from "./pages/Rooms";
+import SingleRoom from "./pages/SingleRoom";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-   <>
-   <NavBar />
-    <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/rooms/" component={Rooms} />
-      <Route exact path="/rooms/:slug" component={SingleRoom} />
-      <Route component={Error} />
-    </Switch>
-   </>
+    <div className="App">
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/rooms/" component={Rooms} />
+        <Route exact path="/rooms/:slug" component={SingleRoom} />
+        <Route exact component={Error} />
+      </Switch>
+    </div>
   );
 }
 
