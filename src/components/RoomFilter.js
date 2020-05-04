@@ -82,7 +82,7 @@ const RoomFilter = ({ rooms }) => {
       </form>
       {/* son misafir tipi */}
       {/* oda fiyatı */}
-      <div className='form-group'>
+      <div className='form-group filter-form'>
         <label htmlFor='price'>oda fiyatı {price} TL</label>
         <input
           type='range'
@@ -97,7 +97,7 @@ const RoomFilter = ({ rooms }) => {
       </div>
       {/* son oda fiyatı */}
       {/* oda boyutu */}
-      <div className='form-group'>
+      <div className='form-group filter-form'>
         <label htmlFor='size'>Oda büyüklüğü</label>
         <div className='size-inputs'>
           <input
@@ -120,7 +120,7 @@ const RoomFilter = ({ rooms }) => {
       </div>
       {/* son oda boyutu */}
       {/* ekstralar */}
-      <div className='form-group'>
+      <div className='form-group filter-form'>
         <div className='single-extra'>
           <input
             type='checkbox'

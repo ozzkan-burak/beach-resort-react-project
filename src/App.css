@@ -459,7 +459,7 @@ h6 {
   margin: 0 auto;
 }
 .filter-form {
-  width: 20vw;
+  width: 15vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
@@ -468,6 +468,8 @@ h6 {
 }
 .form-group {
   text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
 }
 .form-group label {
   display: block;
